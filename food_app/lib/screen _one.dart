@@ -10,12 +10,11 @@ class ScreenOne extends StatelessWidget {
       child: Scaffold(
         backgroundColor: Colors.white,
         body: ListView(
-          padding: 
-          child [
-            SizedBox(
+          children: [
+            const SizedBox(
               height: 10,
             ),
-            Text(
+            const Text(
               "Skenner",
               style: TextStyle(
                 fontSize: 30.0,
@@ -23,10 +22,10 @@ class ScreenOne extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25.0,
             ),
-            Text(
+            const Text(
               "Naskenj QR kod v application zakaznika",
               style: TextStyle(
                 fontSize: 20.0,
@@ -34,10 +33,10 @@ class ScreenOne extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
-            Text(
+            const Text(
               "Zvol typ QR kodu",
               style: TextStyle(
                 fontSize: 20.0,
@@ -45,7 +44,7 @@ class ScreenOne extends StatelessWidget {
                 color: Colors.black,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 35.0,
             ),
             Row(
@@ -53,8 +52,8 @@ class ScreenOne extends StatelessWidget {
               children: [
                 Container(
                   decoration: BoxDecoration(border: Border.all(width: 2)),
-                  padding: EdgeInsets.fromLTRB(30, 30, 30, 30),
-                  child: Column(
+                  padding: const EdgeInsets.fromLTRB(30, 30, 30, 30),
+                  child: const Column(
                     children: [
                       Image(image: AssetImage("images/Group2462.png")),
                       SizedBox(
@@ -73,8 +72,8 @@ class ScreenOne extends StatelessWidget {
                     border: Border.all(width: 2),
                     color: Colors.yellow,
                   ),
-                  padding: EdgeInsets.fromLTRB(30, 30, 30, 30),
-                  child: Column(
+                  padding: const EdgeInsets.fromLTRB(30, 30, 30, 30),
+                  child: const Column(
                     children: [
                       Image(image: AssetImage("images/Group2461.png")),
                       SizedBox(
@@ -90,24 +89,24 @@ class ScreenOne extends StatelessWidget {
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
-            Text(
+            const Text(
               "pocket ps",
               style: TextStyle(
                 fontSize: 20,
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20.0,
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(30, 10, 30, 10),
+              padding: const EdgeInsets.fromLTRB(30, 10, 30, 10),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
                   border: Border.all(width: 2)),
-              child: Text(
+              child: const Text(
                 '2',
                 style: TextStyle(
                   fontSize: 20,
@@ -115,16 +114,16 @@ class ScreenOne extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 25.0,
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(19, 10, 19, 19),
+              padding: const EdgeInsets.fromLTRB(19, 10, 19, 19),
               decoration: BoxDecoration(
                 color: Colors.black,
                 borderRadius: BorderRadius.circular(12),
               ),
-              child: Text(
+              child: const Text(
                 'naskenovet kod',
                 style: TextStyle(
                   color: Colors.white,
@@ -133,13 +132,13 @@ class ScreenOne extends StatelessWidget {
                 ),
               ),
             ),
-            Spacer(),
+            const Spacer(),
             Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
                 color: Colors.yellow,
               ),
-              padding: EdgeInsets.fromLTRB(100, 10, 100, 10),
+              padding: const EdgeInsets.fromLTRB(100, 10, 100, 10),
               child: TextButton(
                   onPressed: () {
                     Navigator.pop(
@@ -147,12 +146,12 @@ class ScreenOne extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => const MyFood()));
                   },
-                  child: Text(
+                  child: const Text(
                     "Prev",
                     style: TextStyle(color: Colors.black, fontSize: 30.0),
                   )),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             )
           ],
